@@ -144,15 +144,7 @@ End If
     'ISOLA O CAR E CONSULTA NOME DA CIDADE
      converteCidade coluna:=2
      
-            'FAZ UMA C�PIA DA PLANILHA "Car" NA PLANILHA "Deslocamento"
-'            Worksheets("Car").UsedRange.Copy Destination:=Worksheets("Deslocamento").Range("A1")
-'            'DETERMINA O TAMANHO DAS COLUNAS"
-'            Worksheets("Deslocamento").Columns("A:Z").ColumnWidth = 15
-'            'ABRE A PLANILHA "Deslocamento"
-'            Worksheets("Deslocamento").Activate
-'
-'    'EXTRAI OS DESLOCAMENTOS
-'     extraiDeslocamento coluna:=4
+           
      
             'FAZ UMA C�PIA DA PLANILHA "Car" NA PLANILHA "Atividade"
             Worksheets("Car").UsedRange.Copy Destination:=Worksheets("Atividade").Range("A1")
@@ -164,9 +156,7 @@ End If
     'EXTRAI AS ATIVIDADES, REMOVE DUPLICADAS
      extraiAtividade coluna:=4
     
-'    'FAZ UMA C�PIA DA PLANILHA "Atividade" NA PLANILHA "Total_Atividades"
-'     Worksheets("Atividade").Range("A1").CurrentRegion.Copy Destination:=Worksheets("Total_Atividades").Range("A1")
-'
+
 '     unificaDeslocamentoAtividade
     
 If planilhaVazia(Worksheets("Atividade")) Then
